@@ -1,0 +1,18 @@
+#  image: nginx
+#  command: nginx
+#  volumes:
+#   - /Users/xiaofeng/WebstormProjects/smartfarm-frontend:/usr/share/nginx/html:ro
+#  links:
+#    - backend
+#  ports:
+#    - "8000:80"
+backend:
+  build: .
+  command: java -jar /opt/local/gs-spring-boot-0.1.0.jar
+  ports:
+    - "8001:8080"
+#  links:
+#   - db
+
+#db:
+#  image: postgres
