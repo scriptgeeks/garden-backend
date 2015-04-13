@@ -4,11 +4,19 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.2.RELEASE")
+        classpath 'org.springframework:springloaded:1.2.0.RELEASE'
     }
 }
 
 apply plugin: 'java'
 apply plugin: 'idea'
+idea {
+    module {
+        inheritOutputDirs = false
+        outputDir = file("$buildDir/classes/main/")
+    }
+}
+
 apply plugin: 'spring-boot'
 
 jar {
@@ -29,7 +37,7 @@ dependencies {
     }
     compile("org.springframework.boot:spring-boot-starter-jetty")
     compile("org.springframework.boot:spring-boot-starter-actuator")
-    compile("org.rrd4j:rrd4j:2.2")
+    compile("com.lmax:disruptor:3.3.2")
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
