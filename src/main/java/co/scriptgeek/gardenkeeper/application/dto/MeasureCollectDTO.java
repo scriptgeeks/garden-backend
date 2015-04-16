@@ -1,6 +1,7 @@
 package co.scriptgeek.gardenkeeper.application.dto;
 
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by xiaofeng on 15/4/7.
@@ -8,7 +9,7 @@ import java.util.Arrays;
 public class MeasureCollectDTO {
 
     private long timestamp;
-    private MeasureValueDTO[] measureValues;
+    private List<MeasureValueDTO> measureValues;
 
     public long getTimestamp() {
         return timestamp;
@@ -18,19 +19,12 @@ public class MeasureCollectDTO {
         this.timestamp = timestamp;
     }
 
-    public MeasureValueDTO[] getMeasureValues() {
+    public List<MeasureValueDTO> getMeasureValues() {
         return measureValues;
     }
 
-    public void setMeasureValues(MeasureValueDTO[] measureValues) {
+    public void setMeasureValues(List<MeasureValueDTO> measureValues) {
         this.measureValues = measureValues;
     }
 
-    @Override
-    public String toString() {
-        return "MeasureValuesDTO{" +
-                "timestamp=" + timestamp +
-                ", measureValues=" + Arrays.toString(measureValues) +
-                '}';
-    }
 }
