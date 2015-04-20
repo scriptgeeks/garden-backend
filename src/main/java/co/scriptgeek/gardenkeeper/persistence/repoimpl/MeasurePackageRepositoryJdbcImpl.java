@@ -2,6 +2,8 @@ package co.scriptgeek.gardenkeeper.persistence.repoimpl;
 
 import co.scriptgeek.gardenkeeper.domain.model.MeasurePackage;
 import co.scriptgeek.gardenkeeper.domain.repository.MeasurePackageRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -9,6 +11,9 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public class MeasurePackageRepositoryJdbcImpl implements MeasurePackageRepository {
+    @Autowired
+    protected JdbcTemplate jdbc;
+
     @Override
     public void save(MeasurePackage measurePackage) {
 

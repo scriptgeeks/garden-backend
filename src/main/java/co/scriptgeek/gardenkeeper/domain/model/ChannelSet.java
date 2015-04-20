@@ -1,5 +1,6 @@
 package co.scriptgeek.gardenkeeper.domain.model;
 
+
 import java.util.Date;
 import java.util.List;
 
@@ -18,6 +19,7 @@ public class ChannelSet {
         this.tableName = tableName;
         this.validFrom = validFrom;
         this.validTo = validTo;
+
         this.channels = channels;
     }
 

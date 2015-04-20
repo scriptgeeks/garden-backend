@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by xiaofeng on 15/4/7.
  */
 @RestController
-public class MeasureValueController {
+public class MeasureController {
 
     @Autowired
     private MeasureCollectService measureCollectService;
 
-    @RequestMapping(value = "/measure_values", method = RequestMethod.POST)
+    @RequestMapping(value = "/measures", method = RequestMethod.POST)
     public void collectMeasureValues(@RequestBody MeasureCollectDTO measureCollect) {
         measureCollectService.submitMeasureCollect(measureCollect);
     }

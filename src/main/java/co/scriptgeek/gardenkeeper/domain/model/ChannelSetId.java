@@ -5,4 +5,12 @@ package co.scriptgeek.gardenkeeper.domain.model;
  */
 public class ChannelSetId {
     private long channelSetId;
+
+    public ChannelSetId(long channelSetId) {
+        this.channelSetId = channelSetId;
+    }
+
+    public long getChannelSetId() {
+        return channelSetId;
+    }
 }

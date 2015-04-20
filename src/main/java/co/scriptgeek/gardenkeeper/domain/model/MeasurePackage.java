@@ -1,14 +1,11 @@
 package co.scriptgeek.gardenkeeper.domain.model;
 
-import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
 import org.joda.time.DateTime;
 import org.joda.time.Duration;
 import org.joda.time.Instant;
 
-import java.io.ByteArrayOutputStream;
 import java.nio.ByteBuffer;
 import java.util.*;
-import java.util.function.Function;
 import java.util.stream.IntStream;
 
 import static org.hibernate.validator.internal.util.CollectionHelper.newArrayList;
