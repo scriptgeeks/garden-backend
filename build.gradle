@@ -37,8 +37,8 @@ dependencies {
     }
     compile("org.springframework.boot:spring-boot-starter-jetty")
     compile("org.springframework.boot:spring-boot-starter-actuator")
-    compile("org.springframework.boot:spring-boot-starter-jdbc")
-    compile("org.postgresql:postgresql:9.2-1003-jdbc4")
+    compile("org.springframework.boot:spring-boot-starter-websocket")
+    compile("org.springframework.data:spring-data-cassandra:1.2.0.RELEASE")
     compile("com.lmax:disruptor:3.3.2")
     compile("joda-time:joda-time:2.7")
     testCompile("org.springframework.boot:spring-boot-starter-test")
